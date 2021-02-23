@@ -1,4 +1,5 @@
 ---
+uuid: 9573532b-f2db-8cd3-9069-b2c817ff6553
 title: Hello World
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).

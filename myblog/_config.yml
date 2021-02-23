@@ -98,7 +98,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-sam
+theme: concise
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -106,51 +106,6 @@ deploy:
   type: git
   repo: https://github.com/xxry/xxry.github.io.git
   branch: master
-
-## 'hexo-theme-sam'theme add ##
-jsonContent:
-  meta: false
-  pages: false
-  posts:
-    title: true
-    date: true
-    path: true
-    text: true
-    raw: false
-    content: false
-    slug: false
-    updated: false
-    comments: true
-    link: false
-    permalink: false
-    excerpt: false
-    categories: true
-    tags: true
-#RSS订阅
-plugin:
-  - hexo-generator-feed
-#畅言平台评论配置
-#ID
-changyan_appid: cysXoaLrO
-#KEY
-changyan_appkey: d728bfac2289e4139bef3956efe4401f
-# 侧边导航
-aside_menu:
-  home:
-    link: /index.html
-    icon: wendang
-  archives:
-    link: /archives/index.html
-    icon: wendang1
-  tags:
-    link: /tags/index.html
-    icon: biaoqian1
-  links:
-    link: /links/index.html
-    icon: lianjie
-  about:
-    link: /about/index.html
-    icon: guanyu
-  rss:
-    link: /atom.xml
-    icon: rss
+  
+# optimizes HTML, CSS, JS and imagages
+all_minifier: true
