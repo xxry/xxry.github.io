@@ -6,7 +6,7 @@
   <link href="https://xxry.vip/atom.xml" rel="self"/>
   
   <link href="https://xxry.vip/"/>
-  <updated>2021-02-23T16:10:43.760Z</updated>
+  <updated>2021-02-23T16:12:41.904Z</updated>
   <id>https://xxry.vip/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://xxry.vip/2021/02/24/1-20210224-1/"/>
     <id>https://xxry.vip/2021/02/24/1-20210224-1/</id>
     <published>2021-02-23T16:00:38.000Z</published>
-    <updated>2021-02-23T16:10:43.760Z</updated>
+    <updated>2021-02-23T16:12:41.904Z</updated>
     
     <content type="html"><![CDATA[<p>在构建自己博客的时候，发现的这个问题：</p><p>每次将文章hexo d发布后，发现自己的blog界面打不开了，找了原因发现github里自定义的域名失效清空了，无奈去网上搜寻解决办法，经试验以下这个方法可以。</p><a id="more"></a><p>只要在根路径下source目录中添加一个新文件CNAME（这个为文件全称不用加后缀）</p><p>把这个文件用notepad打开写入自定义的域名</p><p>然后就ok了。</p>]]></content>
     
@@ -31,23 +31,10 @@
     
     
     
-    
-    <category term="hexo" scheme="https://xxry.vip/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>暂时还没有此类文章哦，作者偷懒了</title>
-    <link href="https://xxry.vip/2021/02/23/1-20210223-1/"/>
-    <id>https://xxry.vip/2021/02/23/1-20210223-1/</id>
-    <published>2021-02-23T15:32:17.000Z</published>
-    <updated>2021-02-23T15:36:08.507Z</updated>
-    
-    
-    
-    
     <category term="front-end" scheme="https://xxry.vip/categories/front-end/"/>
     
+    
+    <category term="hexo" scheme="https://xxry.vip/tags/hexo/"/>
     
   </entry>
   
