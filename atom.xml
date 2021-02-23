@@ -6,7 +6,7 @@
   <link href="https://xxry.vip/atom.xml" rel="self"/>
   
   <link href="https://xxry.vip/"/>
-  <updated>2021-02-22T10:08:05.783Z</updated>
+  <updated>2021-02-23T15:36:08.507Z</updated>
   <id>https://xxry.vip/</id>
   
   <author>
@@ -17,22 +17,64 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://xxry.vip/2021/02/21/hello-world/"/>
-    <id>https://xxry.vip/2021/02/21/hello-world/</id>
-    <published>2021-02-20T16:32:11.307Z</published>
-    <updated>2021-02-22T10:08:05.783Z</updated>
+    <title>暂时还没有此类文章哦，作者偷懒了</title>
+    <link href="https://xxry.vip/2021/02/23/1-20210223-1/"/>
+    <id>https://xxry.vip/2021/02/23/1-20210223-1/</id>
+    <published>2021-02-23T15:32:17.000Z</published>
+    <updated>2021-02-23T15:36:08.507Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+    <category term="front-end" scheme="https://xxry.vip/categories/front-end/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于面试中基本的i++问题</title>
+    <link href="https://xxry.vip/2021/02/23/20210223-2/"/>
+    <id>https://xxry.vip/2021/02/23/20210223-2/</id>
+    <published>2021-02-23T15:22:36.000Z</published>
+    <updated>2021-02-23T15:30:27.324Z</updated>
+    
+    <content type="html"><![CDATA[<p>我们知道自增自减运算符仅仅低于()，在考虑程序运算顺序的时候不必在意其他的运算符的优先级问题。例如：++i :使用i之前，使得i的值加1，i++使用i之后，使其值加1。  下面列举两个例子：</p><a id="more"></a><p>ex1:</p><pre><code>public class Test1&#123;public static void main(String[] args)&#123;            int i=0;            i=i++ + ++i;  //i++  和++i的不同点在于一个是程序完毕后自增，一个是程序开始前自增。第一个表达式i++，其值取i的值0，然后待下一个自增运算结束时计算一次i=i+1；第二个表达式++i，其先计算一次i=i+1=0+1=1，然后补算i=i+1=1+1=2；最终结果：i=0+2=2。&#125;</code></pre><p>ex2:</p><pre><code>public class Test2&#123;static &#123;          int x=5;        &#125;int x,y;public static void main(String[] args)&#123;          x- -;          myMethod();          System.out.println(x  +  y++  +x );     &#125;public static void myMethod()&#123;          y=x++  +  ++x;&#125;&#125;</code></pre><p>下面是对代码的解释：</p><pre><code>static &#123;          int x=5;    //静态方法里的局部变量，不影响后面的值。        &#125;          x- -;  //初始化x的值为0，此时x的值为  -1；public static void myMethod()&#123;          y=x++  +  ++x;  //  y=  -1 + 1=0 前一个“x”不做任何运算，后一个“x” 自增2次。&#125;运行结果为：2</code></pre><p>本文纯属个人理解，如有错误，望联系更改。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;我们知道自增自减运算符仅仅低于()，在考虑程序运算顺序的时候不必在意其他的运算符的优先级问题。例如：++i :使用i之前，使得i的值加1，i++使用i之后，使其值加1。  下面列举两个例子：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="back-end" scheme="https://xxry.vip/categories/back-end/"/>
+    
+    
+    <category term="面试" scheme="https://xxry.vip/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于eclipse下的android开发，运行项目时报错：androidmanifest.xml!</title>
+    <link href="https://xxry.vip/2021/02/23/missing/"/>
+    <id>https://xxry.vip/2021/02/23/missing/</id>
+    <published>2021-02-23T15:08:10.000Z</published>
+    <updated>2021-02-23T15:20:24.573Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天练习Android开发时想要运行项目时报了一个错误：AndroidManifest.xml file missing! 但是我的这个文件明明存在啊。然后我就去网上找了说路径里有中文路径的原因，可是我的路径根本没错啊。后来我知道了一个方法：<strong>点击菜单栏中的Project——&gt;Clean….，再保存一下就可以了</strong>。再运行没错误了。</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;p&gt;今天练习Android开发时想要运行项目时报了一个错误：AndroidManifest.xml file missing! 但是我的这个文件明明存在啊。然后我就去网上找了说路径里有中文路径的原因，可是我的路径根本没错啊。后来我知道了一个方法：&lt;strong&gt;点击菜单栏中的P</summary>
       
     
     
     
+    <category term="back-end" scheme="https://xxry.vip/categories/back-end/"/>
+    
+    
+    <category term="Eclipse" scheme="https://xxry.vip/tags/Eclipse/"/>
+    
+    <category term="android" scheme="https://xxry.vip/tags/android/"/>
     
   </entry>
   
